@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoración del Desempeño</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Agregar FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+    <header>
+        <div class="logo-container">
+            <img src="media/logo_Qplus2.jpg" alt="Logo de QPLUS" class="logo">
+        </div>
+        <nav>
+            <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+            <a href="#caracteristicas" onclick="showSection('caracteristicas')">Características</a>
+            <a href="#modulos" onclick="showSection('modulos')">Suites</a>
+            <a href="#carousel-clientes" onclick="showSection('clientes')">Clientes</a>
+            <a href="#contacto" onclick="showSection('contacto')">Contáctenos</a>
+        </nav>
+    </header>
+    <div class="color-bar">
+        <!-- <button class="login-button" id="loginBtn">Iniciar Sesión</button> -->
+    </div>
+</div>
+
+    <div class="logo-contsg">
+        <img src="media/Banners Suites Qplus - Info/bannersuite_VD.png" alt="Logo de sistemas de gestion" class="logo-suite">
+    </div>
+    
+    <div class="text-container"> 
+            <p>
+                Administración y análisis del desarrollo de los colaboradores de la empresa, de una manera eficiente, 
+                basado en el análisis de competencias (organizacionales y de rol) y análisis de rendimiento (indicadores por funcionario). 
+            </p>
+    </div>
+    <div class="container" id="caracteristicas">   
+        <div class="text-left"> 
+        <!-- Primera columna: Texto descriptivo -->              
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Permite dar soporte informático al modelo de Gestión del Talento Humano 
+                basado en Competencias Laborales y Rendimiento.
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Facilita a las organizaciones la alineación, en forma clara y directa, 
+                de sus propósitos y estrategias con sus procesos y con las actividades de su personal.
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Visualización gráfica de los resultados en Mapa de Desempeño.
+            </div>
+        </div>
+       <!-- Segunda columna: imagen -->
+        <div class="img-container-suite">
+            <img src="media/Img_VD.png" alt="Valoración del desempeño">
+        </div>
+    </div>
+<div class="text-container"> 
+    <p>
+        Módulos: Descripciones de Cargo, Diccionario de Competencias, Descripción de Competencias, Análisis de Desarrollo (ADI), 
+        Análisis de Adaptación al Cargo (ADA), Plan de Desarrollo Individual (PDI), Mapa de Desempeño, Estadísticas, 
+        Administración y Seguridad.
+    </p>
+</div>
+<!-- Modulos -->
+    <div class="logo-description-container">
+        <table>
+            <!-- Fila 1 -->
+            <tr class="row-with-border">
+                <!-- Columna del logo -->
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/diccionario.png" alt="Diccionario de Competencias" class="labeled-image">
+                    <p class="image-label">Diccionario de Competencias</p>
+                </td>
+                <!-- Columna de la descripción -->
+                <td style="width: 80%; vertical-align: top;">
+                    <p>
+                        •	Consultas de competencias y comportamientos por cargo.
+                    </p>
+                </td>
+            </tr>
+            <!-- Fila 2 -->
+            <!-- <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/adaptacionCargo.png" alt="Adaptación al Cargo" class="labeled-image">
+                    <p class="image-label">Adaptación al Cargo</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>
+                        Este es el Logo 2. Representa una funcionalidad adicional, diseñada para mejorar la experiencia 
+                        del usuario.
+                    </p>
+                </td>
+            </tr> -->
+            <!-- Fila 3 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/descripciones_de_Cargo.png" alt="Descripción de Cargo" class="labeled-image">
+                    <p class="image-label">Descripción de Cargo</p>
+                </td>
+                <td style="vertical-align: top;">
+
+                        <p>•	Creación y administración de los perfiles de cargo.</p> 
+                        <p>•	Actualización automática de las competencias requeridas para el desempeño.</p> 
+                        <p>•	Asociación de los elementos de protección, comités a los que pertenece, cargos que le reportan, 
+                            requisitos de educación, formación, experiencia y los indicadores del cargo con los que se realizará 
+                            el Análisis de Rendimiento.</p> 
+                </td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/estadisticas.png" alt="Estadísticas ADI" class="labeled-image">
+                    <p class="image-label">Estadísticas</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Consulta del porcentaje de diligenciamiento por evaluación.</p> 
+                    <p>•	Consulta de los resultados del análisis de competencias por evaluación.</p> 
+                    <p>•	Consulta de los resultados del análisis de rendimiento por evaluación.</p>
+                    <p>•	Sistema de filtros para consultar la información por dirección, gerencia, por área, por la empresa general.</p>
+                </td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/mapadetalentos.png" alt="Mapa de Talentos Funcionales" class="labeled-image">
+                    <p class="image-label">Mapa de Desempeño</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Visualización gráfica por área y por año de la posición de los colaboradores de acuerdo con el nivel de desempeño.</p>
+                    <p>•	Administración de los niveles de desempeño (nombres, colores).</p>
+                    <p>•	Plano con 2 ejes: Competencias y Rendimiento.</p>
+                </td>
+            </tr>
+            <!-- Fila 6 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/analisis_de_Desarrollo.png" alt="ADI-Análisis de Desarrollo" class="labeled-image">
+                    <p class="image-label">Análisis de Desarrollo (ADI)</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Programación análisis de desarrollo por periodo, año y colaborador (Jefe, Autoevaluación, Par).</p>
+                    <p>•	Análisis de desarrollo de competencias y rendimiento (indicadores).</p>
+                    <p>•	Concepto final del análisis de desarrollo de acuerdo con el promedio ponderado de los 2 
+                        aspectos de valoración: competencias y rendimiento.</p>                   
+                </td>
+            </tr>
+            <!-- Fila 7 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/plan_de_desarrollo_individual.png" alt="PDI-Plan de Desarrollo Individual" class="labeled-image">
+                    <p class="image-label">Plan de Desarrollo Individual</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Planeación de actividades por año y por funcionario para mejorar en las competencias e indicadores en los 
+                        que se requiere mejoramiento.</p>
+                    <p>•	Registro de los seguimientos realizados a cada actividad hasta su cierre.</p> 
+                    <p>•	Opción de relacionar links a las actividades (cursos virtuales, videos, etc).</p>                    
+                </td>
+            </tr>
+            <!-- Fila 8 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/desempeño de competencias.png" alt="Desempeño de Competencias" class="labeled-image">
+                    <p class="image-label">Descripción de Competencias</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Creación y administración de las competencias organizacionales y de rol y sus comportamientos por 
+                            niveles de competencia.</p> 
+                    <p>•	Asociación de cargos y niveles por competencia.</p>
+                </td>
+            </tr>
+            <!-- Fila 9 -->
+            <!-- <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/valoracion_desempeño/admin_VD.png" alt="Administración VD " class="labeled-image">
+                    <p class="image-label">Administrador Valoración del Desempeño</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>
+                        Este es el Logo 3. Resalta la capacidad del producto para integrarse con otros sistemas 
+                        de manera eficiente.
+                    </p>
+                </td>
+            </tr> -->
+        </table>
+    </div>
+</body>
+</html>

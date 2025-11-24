@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Gestión</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Agregar FontAwesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+    <header>
+        <div class="logo-container">
+            <img src="media/logo_Qplus2.jpg" alt="Logo de QPLUS" class="logo">
+        </div>
+        <nav>
+            <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+            <a href="#caracteristicas" onclick="showSection('caracteristicas')">Características</a>
+            <a href="#modulos" onclick="showSection('modulos')">Suites</a>
+            <a href="#carousel-clientes" onclick="showSection('clientes')">Clientes</a>
+            <a href="#contacto" onclick="showSection('contacto')">Contáctenos</a>
+        </nav>
+    </header>
+    <div class="color-bar">
+        <!-- <button class="login-button" id="loginBtn">Iniciar Sesión</button> -->
+    </div>
+</div>
+
+    <div class="logo-contsg">
+        <img src="media/Banners Suites Qplus - Info/bannersuite_SG.png" alt="Logo de sistemas de gestion" class="logo-suite">
+    </div>
+    
+    <div class="text-container"> 
+            <p>
+                Administración, gestión, mantenimiento de los Sistemas de Gestión de la empresa:
+            </p>
+    </div>
+<div class="container" id="caracteristicas">   
+        <div class="text-left"> 
+        <!-- Primera columna: Texto descriptivo -->              
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Permite evidenciar rápida y fácilmente seguimientos, 
+                        trazabilidad, análisis y mejoras.
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Brinda confiabilidad y veracidad de la información 
+                        ante auditores y clientes.
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i> Facilita centralizar toda la información de los 
+                        Sistemas de Gestión, reducir tiempos, costos, complejidad de la implantación y mantenimiento 
+                        de los mismos.
+            </div>
+        </div>
+       <!-- Segunda columna: Video -->
+    <div class="video-right">
+            <video width="100%" controls>
+                <source src="media/Qplus - Sistemas de Gestión.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video
+            </video>
+    </div>
+</div>
+<div class="text-container"> 
+    <p>
+        Módulos: Documentos, Acciones, Actas, PQRS, Gestión de Riesgos, No Conformidades de Proceso, PNC, Plan Operativo, Auditorías Internas, 
+        Tareas, Indicadores, Evaluación de Proveedores, Estadísticas, Administración y Seguridad.
+    </p>
+</div>
+<!-- Modulos -->
+    <div class="logo-description-container">
+        <table>
+            <!-- Fila 1 -->
+            <tr class="row-with-border">
+                <!-- Columna del logo -->
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/acciones.png" alt="Acciones" class="labeled-image">
+                    <p class="image-label">Acciones</p>
+                </td>
+                <!-- Columna de la descripción -->
+                <td style="width: 80%; vertical-align: top;">
+                    <p>•	Creación, análisis y seguimiento a las acciones correctivas, preventivas y de mejora.</p> 
+                    <p>•	Análisis de causas desde la óptica de las 5M, aplicando la metodología de los porqués.</p> 
+                    <p>•	Planeación de las actividades de mejoramiento con responsables y fechas.</p> 
+                    <p>•	Planeación de indicadores para medir la eficacia de las acciones.</p> 
+                    <p>•	Registro de seguimientos al cumplimiento y eficacia de las acciones y actividades planeadas.</p> 
+                    <p>•	Opción de adjuntar archivos en Excel, Word, Power Point, PDF, JPG, PNG, etc. (Evidencias).</p>  
+                </td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/actas.png" alt="Actas" class="labeled-image">
+                    <p class="image-label">Actas</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro de las actas de las reuniones por proceso.</p>
+                    <p>•	Registro de tareas por responsable y fecha programada.</p>
+                    <p>•	Opción de adjuntar archivos en Excel, Word, Power Point, PDF, JPG, PNG, etc. (Por ej: listas de asistencia, presentaciones, etc)</p> 
+                </td>
+            </tr>
+            <!-- Fila 3 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/auditorias_internas.png" alt="Auditorías" class="labeled-image">
+                    <p class="image-label">Auditorías</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro de la programación de Auditorías internas por proceso.</p> 
+                    <p>•	Elaboración y seguimiento de las listas de chequeo e Informes de Auditoría.</p> 
+                    <p>•	Clasificación de hallazgos por sistema de gestión</p>
+                    <p>•	Creación de acciones correctivas para los hallazgos.</p> 
+                    <p>•	Seguimiento y cierre por parte de los auditores.</p> 
+                    <p>•	Seguridad y confidencialidad de la información de acuerdo con el usuario logueado.</p> 
+                    
+                </td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/documentos.png" alt="Documentos" class="labeled-image">
+                    <p class="image-label">Documentos</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Gestión documental de los sistemas de gestión: elaboración, revisión, aprobación.</p> 
+                    <p>•	Manejo eficiente de la documentación con versiones vigentes y obsoletas (trazabilidad)</p> 
+                    <p>•	Historial de cambios y control de distribución de documentos.</p>
+                    <p>•	Actualización automática del listado de documentos y registros.</p> 
+                    <p>•	Codificación automática de los documentos controlados.</p> 
+                    <p>•	Administración documentos controlados.</p>
+                    <p>•	Administración de los tipos de documentos y de sus capítulos.</p>
+                    <p>•	Bitácora de documentos externos.</p>
+                    <p>•	Administración de registros y otros documentos de los sistemas de gestión en formatos Excel, Word, Power Point, PDF, etc</p> 
+                    <p>•	Gestión documentos Clientes y Proveedores.</p>
+                </td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/encuestas.png" alt="Encuestas " class="labeled-image">
+                    <p class="image-label">Encuestas </p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Consulta de estadísticas de la gestión de acciones, no conformidades, PNC, auditorias, PQRS en tablas y gráficas, como insumo para la 
+                            revisión gerencial de los sistemas de gestión. </p>
+                </td>
+            </tr>
+            <!-- Fila 6 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/evaluacion_proveedores.png" alt="Evaluación Proveedores" class="labeled-image">
+                    <p class="image-label">Evaluación Proveedores</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Administración cuestionarios de evaluación por tema y tipo de proveedor.</p> 
+                    <p>•	Administración de los pesos de los temas por cada tipo de evaluación.</p>
+                    <p>•	Evaluación de proveedores por periodo.</p> 
+                    <p>•	Tabulación automática por proveedor y por tema evaluado.</p>
+                    <p>•	Socialización automática de las evaluaciones a los proveedores por medio del correo electrónico.</p> 
+                    <p>•	Administración del maestro de proveedores de la empresa.</p>
+                </td>
+            </tr>
+            <!-- Fila 7 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/gestion_de_riesgos.png" alt="Gestión de Riesgos" class="labeled-image">
+                    <p class="image-label">Gestión de Riesgos</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Identificación de los riesgos por proceso</p>
+                    <p>•	Análisis de los riesgos identificados, para mostrar la zona de riesgo en la que se encuentra, teniendo en cuenta la probabilidad 
+                            y la consecuencia.</p>
+                    <p>•	Definición de Controles y evaluaciones de los controles existentes para valorar el riesgo.</p>
+                    <p>•	Programación de Actividades para cada control y seguimientos a las actividades programadas.</p>
+                    <p>•	Opción de adjuntar archivos (Evidencias).</p>                 
+                </td>
+            </tr>
+            <!-- Fila 8 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/indicadores.png" alt="Indicadores" class="labeled-image">
+                    <p class="image-label">Indicadores</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro de los indicadores de gestión de los procesos, facilitando el seguimiento, medición, análisis y mejora.</p> 
+                    <p>•	Administración de los perfiles de cada indicador.</p> 
+                    <p>•	Visualización del resumen de los indicadores por mes, con semáforo de cumplimiento, donde se analizan los resultados acumulados con respecto 
+                            a las metas planeadas.</p> 
+                    <p>•	Clasificación de indicadores de procesos y estratégicos.</p> 
+                    <p>•	Análisis Indicador por periodo con la opción de creación de Acciones Correctivas.</p>                    
+                </td>
+            </tr>
+            <!-- Fila 9 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/no_conformidades.png" alt="No Conformidades" class="labeled-image">
+                    <p class="image-label">No Conformidades de Proceso</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro, análisis y seguimiento oportuno de las no conformidades, para generar acciones correctivas.</p>
+                    <p>•	Mantenimiento de registros de la naturaleza de las no conformidades y de cualquier acción tomada posteriormente, incluyendo las concesiones 
+                            que se hayan obtenido. </p>
+                    <p>•	Opción de adjuntar archivos en Excel, Word, Power Point, PDF, etc. (Evidencias de las no conformidades).</p>                     
+                </td>
+            </tr>
+            <!-- Fila 10 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/plan_operativo.png" alt="Plan Operativo" class="labeled-image">
+                    <p class="image-label">Plan Operativo</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro y evidencia de la planeación por proceso, de las actividades a realizar durante el año para el cumplimiento de 
+                            los objetivos propuestos.</p> 
+                    <p>•	Ajustes y seguimientos periódicos al cumplimiento de las actividades programadas.</p>                    
+                </td>
+            </tr>
+            <!-- Fila 11 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/PNC.png" alt="PNC" class="labeled-image">
+                    <p class="image-label">PNC</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Tratamiento Productos no Conformes: de materias primas, material de empaque, producto en proceso, productos terminados, devoluciones.</p>
+                    <p>•	Opción de adjuntar archivos en Excel, Word, Power Point, PDF, etc. (Evidencias de las no conformidades).</p>                     
+                </td>
+            </tr>
+            <!-- Fila 12 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/PQRS.png" alt="PQRS" class="labeled-image">
+                    <p class="image-label">PQRS</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Registro, análisis y seguimiento oportuno de las peticiones, quejas, reclamos y sugerencias para la creación de planes de acción.</p>
+                    <p>•	Clasificación por tema, asignación, solución, registro de respuesta al cliente y definición de satisfacción</p> 
+                    <p>•	Opción de adjuntar archivos en Excel, Word, Power Point, PDF, etc. (Evidencias).</p>                     
+                </td>
+            </tr>
+            <!-- Fila 13
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/revision_gerencial.png" alt="Revisión Gerencial" class="labeled-image">
+                    <p class="image-label">Revisión Gerencial</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>- Consulta de estadísticas de la gestión de acciones, no conformidades, auditorias, PQRS
+                    e indicadores, en tablas y gráficas, como insumo para la revisión gerencial de los sistemas
+                    de gestión.</p>
+                </td>
+            </tr> -->
+            <!-- Fila 14 -->
+            <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/tareas.png" alt="Tareas" class="labeled-image">
+                    <p class="image-label">Tareas</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>•	Seguimiento a las tareas creadas en los diferentes módulos y directamente en el módulo de tareas.</p>
+                    <p>•	Registro y seguimiento de tareas por funcionario de diferentes fuentes.</p> 
+                    <p>•	Opción para consulta de historial de seguimientos por tarea.</p> 
+                    <p>•	Opción de adjuntar archivos (Evidencias).</p>                     
+                </td>
+            </tr>
+            <!-- Fila 15 -->
+            <!-- <tr class="row-with-border">
+                <td class="image-label.container">
+                    <img src="media/sistemas_gestion/adm_SG.png" alt="Admin SG" class="labeled-image">
+                    <p class="image-label">Administrador Sistemas de Gestión</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Ex nostrum quia rerum harum accusamus iusto accusantium distinctio. 
+                       Dolorem, soluta. Soluta officiis illum nesciunt asperiores non commodi sit, suscipit quia veniam.
+                    </p>
+                </td>
+            </tr> -->
+        </table>
+    </div>
+    
+</body>
+</html>
