@@ -9,7 +9,8 @@ body {
 }
 
 h2{
-    font-weight: bold; /* Para que el texto ete en negrilla */
+    text-align: center;
+    font-weight: bold;
     font-size: 35px;
 }
 
@@ -18,17 +19,17 @@ h2{
 }
 
 .container-inicio {
-    padding: 20px;
+    padding: 150px;
     background-color: #dddd;
 }
 
 .container-suites{
-    padding: 20px;
+    padding: 150px;
     background-color: #dddd;
 }
 
 .container-insta{
-    padding: 20px;
+    padding: 10px;
     background-color: #dddd;
 }
 
@@ -474,35 +475,29 @@ nav a:hover {
 }
 
 /* Estilo general del carrusel clientes */
-#carousel-clientes {
+/* #carousel-clientes {
     position: relative;
     z-index: 2;
     width: 100%;
     overflow: hidden;
-    /* background-color: #f9f9f9; */
-    padding: 10px 0; /* Espaciado superior e inferior */
+    padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor de imágenes */
 #carousel-clientes .carousel-inner {
     display: flex;
     transition: transform 1s ease-in-out;
-    gap: 20px; /* Espaciado entre imágenes */
+    gap: 20px;
     align-items: center;
 }
 
-/* Estilo de las imágenes */
 #carousel-clientes img {
-    width: 270px; /* Ancho fijo para todas las imágenes */
-    height: 150px; /* Alto fijo para todas las imágenes */
-    object-fit: contain; /* Ajusta la imagen sin recortarla ni distorsionarla */
-    /* border: 1px solid darkorange; */
+    width: 270px;
+    height: 150px;
+    object-fit: contain;
     border-radius: 8px;
-    /* background-color: #fff; Fondo blanco para imágenes con transparencia */
 }
 
-/* Botones del carrusel */
 #carousel-clientes .carousel-buttons {
     position: absolute;
     top: 50%;
@@ -525,7 +520,58 @@ nav a:hover {
 
 #carousel-clientes .carousel-buttons button:hover {
     background-color: rgba(0, 0, 0, 0.9);
+} */
+
+
+/* Prueba Carrusel John */
+.carouselClientes{
+    margin: 100px auto;
+    width: 95%;
+    /* border: 5px solid blue; */
+    display: flex;
+    overflow-x: auto;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 25s infinite linear;
+    padding-right: 1em;
+}
+.cardCarousel {
+    flex: 0 0 5em;
+    height: 3em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.carouselClientes img {
+    width: 270px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.tituloClientes {
+    text-align: center;
+}
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
+}
+/* Fin carrusel */
 
 /* Ajustar la sección 'inicio' para que no se superponga al carrusel */
 .container#inicio {
