@@ -89,65 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     showImage(currentIndex);
 });
         
-// Carrusel de Clientes
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Obtener todas las imágenes del carrusel
-    const imagesClientes = document.querySelectorAll('#carousel-clientes .carousel-inner img');
-    
-    // Convertir el NodeList en un array para poder reordenarlo
-    const imagesArray = Array.from(imagesClientes);
-    
-    // Función para mezclar las imágenes aleatoriamente
-    function shuffleImages() {
-        for (let i = imagesArray.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1)); // Obtener índice aleatorio
-            [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]]; // Intercambiar
-        }
-
-        // Vuelve a añadir las imágenes en el orden aleatorio
-        const carouselInner = document.querySelector('#carousel-clientes .carousel-inner');
-        carouselInner.innerHTML = ''; // Limpiar el contenedor actual
-        imagesArray.forEach(image => carouselInner.appendChild(image)); // Añadir imágenes aleatorias
-    }
-
-    // Llamar a la función para mezclar las imágenes al cargar la página
-    shuffleImages();
-});
-
-let currentIndexClientes = 0; // Índice de la imagen actual
-const imagesClientes = document.querySelectorAll('#carousel-clientes .carousel-inner img'); // Todas las imágenes del carrusel
-const totalImagesClientes = imagesClientes.length; // Total de imágenes
-
-// Función para cambiar la imagen activa
-function changeImageClientes() {
-    // Solo cambia si hay más imágenes para mostrar
-    if (currentIndexClientes < totalImagesClientes - 1) {
-        currentIndexClientes++;
-    } else {
-        return; // Si ya está en la última imagen, no hace nada
-    }
-
-    // Desplazar el carrusel
-    const newTransformValue = -currentIndexClientes * 100; // Desplazamos por el 100% del ancho de la imagen
-    document.querySelector('#carousel-clientes .carousel-inner').style.transform = `translateX(${newTransformValue}%)`;
-}
-
-// Configurar los botones de navegación
-document.getElementById('prev-clientes').addEventListener('click', () => {
-    // Cambiar al índice anterior
-    if (currentIndexClientes > 0) {
-        currentIndexClientes--;
-        const newTransformValue = -currentIndexClientes * 100;
-        document.querySelector('#carousel-clientes .carousel-inner').style.transform = `translateX(${newTransformValue}%)`;
-    }
-});
-
-document.getElementById('next-clientes').addEventListener('click', () => {
-    changeImageClientes();
-});
-
-
 // Seleccionar todos los botones con la clase 'load-content-btn' para las Cards
 const buttons = document.querySelectorAll('.load-content-btn');
 const contentContainer = document.getElementById('content-container');

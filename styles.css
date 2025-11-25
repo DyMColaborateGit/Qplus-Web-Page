@@ -1,4 +1,25 @@
+/* Estilos para el contenedor general */
+.wrapper-principal {
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
 /* Estilos básicos */
+html {
+    scroll-padding-top: 200px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Century Gothic';
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 22px;
+}
+
 body {
     font-family: 'Century Gothic';
     margin: 0;
@@ -15,23 +36,23 @@ h2{
 }
 
 .container {
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
-.container-inicio {
-    padding: 150px;
+/* .container-inicio {
+    padding: 20px;
     background-color: #dddd;
 }
 
 .container-suites{
-    padding: 150px;
+    padding: 20px;
     background-color: #dddd;
 }
 
 .container-insta{
-    padding: 10px;
     background-color: #dddd;
-}
+} */
 
 .card-container {
     display: flex;
@@ -128,22 +149,22 @@ h2{
     background-color: #003366;
 }
 
-/* Contenedor de las tarjetas */
-.card-container-nav {
+
+/* .card-container-nav {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Estilo base de las tarjetas */
+
 .card-nav {
     width: 350px;
     height: 350px;
     background-color: #346ba6;
     color: white;
     border: 1px solid white;
-    border-bottom: 4px solid #e67626; /* Borde inferior fijo visible */
+    border-bottom: 4px solid #e67626;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -154,12 +175,11 @@ h2{
 }
 
 .card-nav:hover {
-    transform: scale(1.05); /* Efecto de escala */
+    transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    height: auto; /* La tarjeta se expande más */
+    height: auto;
 }
 
-/* Estilo del logo en la tarjeta */
 .card-logo {
     text-align: center;
     padding: 20px;
@@ -168,10 +188,10 @@ h2{
 .card-logo img {
     max-height: 250px;
     max-width: 250px;
-    border-radius: 50%; /* Opción para que el logo sea circular */
+    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px; /* Separación entre el logo y el título */
-    filter: brightness(0) invert(1); /* Aplica un filtro de brillo para hacer la imagen blanca */
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
 }
 
 .card-logo h3 {
@@ -180,21 +200,90 @@ h2{
     color: white;
 }
 
-/* Contenido de la tarjeta */
+
 .card-content-nav {
-    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+    flex-grow: 1;
     padding: 15px;
     background-color: #346ba6;
     box-sizing: border-box;
-    opacity: 0; /* Contenido oculto inicialmente */
-    transform: translateY(20px); /* Desplaza el contenido hacia abajo para ocultarlo */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Animación */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     text-align: left;
 }
 
 .card-nav:hover .card-content-nav {
-    opacity: 1; /* Hacer visible el contenido */
-    transform: translateY(0); /* Mueve el contenido a su posición original */
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.card-container-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo base de las tarjetas */
+.card-nav {
+    width: 350px;
+    height: 90px;
+    min-height: 250px;
+    background-color: #346ba6;
+    color: white;
+    border: 1px solid white;
+    border-bottom: 4px solid #e67626;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.4s ease, height 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-nav:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 900px;
+    height: auto;
+}
+
+.card-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-logo img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.card-logo h3 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+
+
+.card-content-nav {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #346ba6;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: justify;
+}
+
+.card-nav:hover .card-content-nav {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Botón central */
@@ -474,60 +563,13 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilo general del carrusel clientes */
-/* #carousel-clientes {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    overflow: hidden;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#carousel-clientes .carousel-inner {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    gap: 20px;
-    align-items: center;
-}
-
-#carousel-clientes img {
-    width: 270px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-#carousel-clientes .carousel-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-#carousel-clientes .carousel-buttons button {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-#carousel-clientes .carousel-buttons button:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-} */
-
-
 /* Prueba Carrusel John */
 .carouselClientes{
-    margin: 100px auto;
-    width: 95%;
+    margin: 50px auto;
+    width: 100%;
+    height: 150px;
     /* border: 5px solid blue; */
+    border-radius: 10px;
     display: flex;
     overflow-x: auto;
     background: white;
@@ -554,8 +596,8 @@ nav a:hover {
 }
 
 .carouselClientes img {
-    width: 270px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     object-fit: contain;
     border-radius: 8px;
 }
@@ -591,6 +633,10 @@ nav a:hover {
     margin: 0.5em 0;
 }
 
+.formulario label {
+    text-align: left;
+}
+
 .formulario button {
     background-color: #00509E;
     color: white;
@@ -601,6 +647,9 @@ nav a:hover {
 
 .formulario button:hover {
     background-color: #003366;
+}
+.contacto-p {
+    text-align: justify;
 }
 
 /* Animaciones */
@@ -662,35 +711,23 @@ nav a:hover {
 }
 
 /* Estilos para la sección de características (texto a la izquierda y imagen a la derecha) */
-#caracteristicas {
+.container-Caracteristicas{
+    justify-content: center;
+    text-align: center;
+}
+.caracteristica-general {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
-}
-
-#caracteristicas .text-left {
-    flex: 1;
-    max-width: 70%;
-    padding-right: 20px;
-}
-
-#caracteristicas .image-right {
-    flex: 1;
-    max-width: 50%; /* Reducido del 50% al 40% */
-    padding-left: 10px; /* Menos espacio a la izquierda si es necesario */
+    text-align: center;
 }
 
 #caracteristicas .image-right img {
-    width: 100%; /* La imagen se ajusta al contenedor */
-    max-width: 600px; /* Máximo tamaño específico */
-    height: auto; /* Mantiene la proporción */
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     display: block;
-}
-
-#caracteristicas .video-right {
-    flex: 1;
-    max-width: 50%;
+    padding-left: 50px;
 }
 
 #caracteristicas ul {
@@ -707,25 +744,6 @@ nav a:hover {
     color: #346ba6;
     margin-right: 10px;
     font-size: 1.2em;
-}
-
-/* Iconos y Footer */
-.whatsapp-icon-footer {
-    background-color: #25D366;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 1.5em;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    position: absolute;
-    bottom: 80px;
-    right: 20px;
-    z-index: auto;
-}
-
-.whatsapp-icon-footer:hover {
-    transform: scale(1.1);
 }
 
 /* Estilo de la tabla de contacto */
@@ -799,23 +817,94 @@ nav a:hover {
     color: #555;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+/* Footer John */
+
+.pie-pagina {
+    width: 100%;
+    /* background-color: #003366; */
+    /* background-color: #346ba6; */
     background-color: #346ba6;
-    color: #fff;
-    padding: 1em 0;
-    padding: 20px 10px;
-    margin-top: 2em;
-    animation: fadeIn 2s ease-in-out;
 }
 
-.footer-content{
-    text-align: center; /* Centra el contenido del footer */
-    flex: 1; /* Permite que el contenido principal ocupe el espacio sobrante */
+.grupo-1 {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px, 0px;
 }
+
+.box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure img {
+    width: 250px;
+}
+
+.box h3 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.box p a {
+    color: white;
+}
+.box p a:hover {
+    color: #e67626;
+}
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #003366;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+
+.red-social a:hover {
+    color: #e67626;
+}
+
+.grupo-2 {
+    background-color: #e67626;
+    padding: 15px, 10px;
+    text-align: center;
+    color: white;
+}
+
+.grupo-2  small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px, 0px;
+    }
+    
+}
+/* Fin Footer */
 
 .image-container{
     margin-left: 0;
@@ -827,43 +916,22 @@ footer {
 
 }
 
-.social-icons a {
-    color: darkorange;
-    margin: 0 15px;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: white;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    color: #00509E;
-    text-decoration: underline;
-}
-
 /* Tabla en M_Sistemas de gestion */
 .logo-description-container table {
-    border-spacing: 20px; /* Espacio entre las filas y columnas */
+    border-spacing: 20px;
     width: 100%;
 }
 
 .logo-description-container td {
     padding: 10px;
-    vertical-align: middle; /* Alinea verticalmente el contenido en el centro */
+    vertical-align: middle;
 }
 
 .logo-description-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar los logos */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo-description-container p {
